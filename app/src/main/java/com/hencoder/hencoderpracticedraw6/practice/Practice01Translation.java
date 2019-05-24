@@ -38,8 +38,8 @@ public class Practice01Translation extends RelativeLayout {
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
 
-        animateBt = (Button) findViewById(R.id.animateBt);
-        imageView = (ImageView) findViewById(R.id.imageView);
+        animateBt = findViewById(R.id.animateBt);
+        imageView = findViewById(R.id.imageView);
         if (SDK_INT > Build.VERSION_CODES.LOLLIPOP) {
             // 给音乐图标加上合适的阴影
             imageView.setOutlineProvider(new MusicOutlineProvider());
@@ -49,6 +49,7 @@ public class Practice01Translation extends RelativeLayout {
             @Override
             public void onClick(final View v) {
                 // TODO 在这里处理点击事件，通过 View.animate().translationX/Y/Z() 来让 View 平移
+                imageView.animate().translationX(400);
             }
         });
     }
