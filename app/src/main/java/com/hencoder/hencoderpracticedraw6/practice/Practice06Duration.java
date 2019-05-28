@@ -32,6 +32,7 @@ public class Practice06Duration extends LinearLayout {
         super(context, attrs, defStyleAttr);
     }
 
+
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();

@@ -39,6 +39,7 @@ public class Practice05MultiProperties extends ConstraintLayout {
             @Override
             public void onClick(View v) {
                 // TODO 在这里处理点击事件，同时对多个属性做动画
+                imageView.animate().rotation(360).scaleX(1).scaleY(1).alpha(1).translationX(400).setDuration(1000);
             }
         });
     }
